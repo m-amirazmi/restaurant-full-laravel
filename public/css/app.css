@@ -146,48 +146,6 @@ table {
   border-spacing: 0;
 }
 
-.welcome-jumbo {
-  transform: translate3d(333px, 0, 0);
-  max-width: calc(100vw - 350px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #ed4852;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  overflow: hidden;
-  padding: 100px;
-}
-
-.welcome-jumbo .status {
-  display: inline-block;
-  padding: 10px 15px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: white;
-  background: black;
-  border-radius: 5px;
-  align-self: flex-start;
-  margin-bottom: 20px;
-}
-
-.welcome-jumbo h1 {
-  font-size: 4rem;
-  font-weight: 900;
-  align-self: flex-start;
-  color: white;
-  margin-bottom: 100px;
-}
-
-.welcome-jumbo .burger-fries {
-  width: 100%;
-  position: relative;
-}
-
 #about-page {
   padding: 100px;
 }
@@ -356,6 +314,95 @@ table {
   #menu-page {
     padding: 20px;
   }
+}
+
+#single-menu {
+  padding: 100px;
+}
+
+#single-menu h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ed4852;
+  margin-bottom: 2rem;
+}
+
+#single-menu .item {
+  margin-bottom: 2rem;
+}
+
+#single-menu .title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#single-menu .title h4,
+#single-menu .title .price {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 900;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  #single-menu {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #single-menu {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #single-menu {
+    padding: 20px;
+  }
+}
+
+.welcome-jumbo {
+  transform: translate3d(333px, 0, 0);
+  max-width: calc(100vw - 350px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ed4852;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  overflow: hidden;
+  padding: 100px;
+}
+
+.welcome-jumbo .status {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.welcome-jumbo h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  align-self: flex-start;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.welcome-jumbo .burger-fries {
+  width: 100%;
+  position: relative;
 }
 
 body {
