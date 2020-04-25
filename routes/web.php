@@ -24,9 +24,14 @@ Route::get('/admin/food-items', 'admin\FoodItemsController@index');
 Route::get('/admin/food-items/create','admin\FoodItemsController@create');
 Route::get('/admin/food-items/{id}/edit', 'admin\FoodItemsController@edit');
 
-//Admin FoodCategories
+//Admin Customers
 Route::get('/admin/offers-members', 'admin\CustomerController@allOffersMembers');
 Route::get('/admin/reservations','admin\CustomerController@allReservations');
+
+//Admin Users
+Route::get('/admin/users', 'admin\UsersController@index');
+Route::get('/admin/users/create','admin\UsersController@create');
+Route::get('/admin/users/{id}/edit', 'admin\UsersController@edit');
 
 //Admin Auth
 Route::get('/admin/register', function () {
