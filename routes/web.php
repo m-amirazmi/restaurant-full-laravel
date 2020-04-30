@@ -33,6 +33,8 @@ Route::get('/admin/users', 'admin\UsersController@index');
 Route::get('/admin/users/create','admin\UsersController@create');
 Route::post('/admin/users','admin\UsersController@store');
 Route::get('/admin/users/{id}/edit', 'admin\UsersController@edit');
+Route::put('/admin/users/{id}', 'admin\UsersController@update');
+Route::delete('/admin/users/{id}/delete', 'admin\UsersController@delete');
 
 //Admin Auth
 Route::get('/admin/register', function () {
