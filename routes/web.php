@@ -31,7 +31,9 @@ Route::put('/admin/food-items/{id}', 'admin\FoodItemsController@update');
 Route::delete('/admin/food-items/{id}/delete', 'admin\FoodItemsController@delete');
 
 //Admin Customers
-Route::get('/admin/offers-members', 'admin\CustomerController@allOffersMembers');
+//Admin Members
+Route::get('/admin/members', 'admin\MemberController@index');
+//Admin Reservations
 Route::get('/admin/reservations','admin\CustomerController@allReservations');
 
 //Admin Users
